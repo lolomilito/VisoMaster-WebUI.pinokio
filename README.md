@@ -1,7 +1,7 @@
 # VisoMaster + WebUI for Pinokio
 
 One-click [Pinokio](https://pinokio.computer) launcher that installs **two independent apps** and shares the model files between them:
-
+![Descripción de la imagen](https://i.imgur.com/urGzMzh.jpeg)
 | App | What it is |
 | --- | --- |
 | **VisoMaster** | The original desktop (Qt) application, unmodified. |
