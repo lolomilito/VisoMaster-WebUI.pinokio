@@ -1,7 +1,7 @@
 module.exports = {
   version: "3.0",
   title: "VisoMaster + WebUI",
-  description: "VisoMaster (escritorio) y VisoMaster WebUI (navegador), instalados por separado y compartiendo la carpeta de modelos. Requiere GPU NVIDIA.",
+  description: "VisoMaster (desktop) and VisoMaster WebUI (browser), installed separately and sharing one models folder. Best on Windows/Linux with an NVIDIA GPU (CUDA/TensorRT); other machines run on the CPU.",
   icon: "icon.png",
   menu: async (kernel, info) => {
     const apps = [
@@ -22,7 +22,7 @@ module.exports = {
         if (a.key === "webui" && local && local.url) {
           items.push({ icon: a.icon, text: `Abrir ${a.name}`, href: local.url, target: "_blank" })
         }
-        items.push({ icon: "fa-solid fa-terminal", text: `${a.name}: en ejecución (terminal / detener)`, href: start })
+        items.push({ icon: "fa-solid fa-terminal", text: `${a.name}: running (terminal / stop)`, href: start })
       } else if (info.running(update)) {
         items.push({ icon: "fa-solid fa-terminal", text: `${a.name}: actualizando`, href: update })
       } else if (info.running(reset)) {
@@ -30,7 +30,7 @@ module.exports = {
       } else {
         items.push({ icon: "fa-solid fa-power-off", text: `Iniciar ${a.name}`, href: start })
         items.push({ icon: "fa-solid fa-rotate", text: `Actualizar ${a.name}`, href: update })
-        items.push({ icon: "fa-solid fa-wrench", text: partial ? `Terminar instalación de ${a.name}` : `Reinstalar ${a.name}`, href: install })
+        items.push({ icon: "fa-solid fa-wrench", text: partial ? `Finish installing ${a.name}` : `Reinstalar ${a.name}`, href: install })
         items.push({ icon: "fa-regular fa-circle-xmark", text: `Reset entorno ${a.name}`, href: reset })
       }
     }

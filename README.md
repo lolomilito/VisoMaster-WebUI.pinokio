@@ -1,13 +1,15 @@
 # VisoMaster + WebUI for Pinokio
 
-One-click [Pinokio](https://pinokio.computer) launcher that installs **two independent apps** and shares the model files between them:
+One-click [Pinokio](https://pinokio.computer) launcher that installs [VisoMaster](https://www.visomaster.org/es) + WebUI interface and shares the model files between them:
+![Screenshot](https://i.imgur.com/urGzMzh.jpeg)
+
 
 | App | What it is |
 | --- | --- |
-| **VisoMaster** | The original desktop (Qt) application, unmodified. |
+| **VisoMaster** | The original desktop (Qt) application. |
 | **VisoMaster WebUI** | The same face-swap engine with a new browser interface. Run it on the GPU machine and use it from any PC on your network. |
 
-Requires an NVIDIA GPU (CUDA 12.4). Windows is the main target; Linux should work too.
+Best on Windows/Linux with an NVIDIA GPU (CUDA 12.4, TensorRT). Any other machine (AMD, Intel, Apple Silicon, no GPU) is installed with CPU-only packages and runs on the CPU provider (slow, less tested).
 
 ## Install
 
@@ -26,6 +28,10 @@ Everything needed from this repo is bundled (`src/`); internet is only used for 
 - Same keyboard shortcuts as the desktop app (Space, R, A/D, Z/C, S, V/B, markers F / Alt+F / W / Q).
 - Workspaces and parameter files are compatible with the desktop version.
 - Warning: the WebUI has no login by default. Use it on a trusted network, or start it with `--token SECRET` (see `src/webui/README.md`).
+
+## Execution providers
+
+Settings → Providers Priority offers **CUDA**, **TensorRT**, **TensorRT-Engine** and **CPU**; only the ones that work on your machine are listed. Without a CUDA GPU the app starts directly on CPU.
 
 ## Without Pinokio (Windows, after installing)
 
