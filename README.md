@@ -1,6 +1,6 @@
 # VisoMaster + WebUI for Pinokio
 
-One-click [Pinokio](https://pinokio.computer) launcher that installs **two independent apps** and shares the model files between them:
+One-click [Pinokio](https://pinokio.computer) launcher that installs [VisoMaster](https://www.visomaster.org/es) + WebUI interface and shares the model files between them:
 ![Descripción de la imagen](https://i.imgur.com/urGzMzh.jpeg)
 | App | What it is |
 | --- | --- |
