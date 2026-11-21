@@ -1,6 +1,6 @@
-desktop/
-webui/
-shared/
+/desktop/
+/webui/
+/shared/
 __pycache__/
 *.pyc
 .DS_Store

@@ -10,7 +10,7 @@ name = sys.argv[1]
 src = os.path.join(HERE, "src", name)
 dst = os.path.join(HERE, name)
 if not os.path.isdir(src):
-    sys.exit(f"Bundled sources not found: {src}")
+    sys.exit(f"ERROR: bundled sources not found: {src}. Make sure the src/ folder is in the repository.")
 
 
 def copy(s, d, top=False):
